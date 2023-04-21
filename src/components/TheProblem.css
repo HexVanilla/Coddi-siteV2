@@ -1,0 +1,36 @@
+/* src/components/Implementation.css */
+
+.problem-section {
+  position: relative;
+  background-color: #111414;
+  color: #efefef;
+  padding: 50px 5%;
+}
+
+.problem-section.light {
+  background-color: #efefef;
+  color: #111414;
+}
+
+.problem-content2 {
+  display: flex;
+  text-align: right;
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+}
+.problem-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 30px 30px;
+  z-index: 1;
+}
+
+.problem-content2 h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}

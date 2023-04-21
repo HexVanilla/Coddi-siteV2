@@ -1,0 +1,78 @@
+.footer-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #111414;
+}
+.footer-section h1 {
+  font-size: 5em;
+}
+.footer-section.light {
+  padding: 2rem;
+  text-align: center;
+  background-color: #efefef;
+}
+
+.divider {
+  width: 80%;
+  margin: 1rem auto;
+  border: none;
+  border-top: 1px solid;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-columns a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.linkedin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-columns .left-column,
+.footer-columns .center-column,
+.footer-columns .right-column {
+  flex-basis: 33%;
+}
+
+.footer-columns .right-column img {
+  width: 120px;
+}
+
+.light h1,
+.light h2,
+.light a,
+.light .divider {
+  color: #111414;
+  border-color: #111414;
+}
+
+.dark h1,
+.dark h2,
+.dark a,
+.dark .divider {
+  color: #efefef;
+  border-color: #efefef;
+}
+
+.light .fab,
+.light .linkedin svg {
+  color: #111414;
+}
+
+.dark .fab,
+.dark .linkedin svg {
+  color: #efefef;
+}

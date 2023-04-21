@@ -1,0 +1,98 @@
+/* src/components/WhatWeDo.css */
+
+.whatwedo-section {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: 140vh;
+  background-position: -90%;
+}
+.whatwedo-section::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.whatwedo-section.light::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.whatwedo-content {
+  position: relative;
+  flex: 0 0 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 5%;
+  background-color: #111414;
+  color: #efefef;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+.whatwedo-content.light {
+  position: relative;
+  flex: 0 0 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 5%;
+  background-color: #efefef;
+  color: #111414;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+.whatwedo-content h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  max-width: 50%;
+}
+
+.whatwedo-content p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 50%;
+}
+
+.cta-button {
+  background-color: #efefef;
+  color: #111414;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  max-width: 200px;
+  width: 100%;
+}
+
+.cta-button:hover {
+  background-color: #ddd;
+}
+
+/* Add animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+  opacity: 0;
+}

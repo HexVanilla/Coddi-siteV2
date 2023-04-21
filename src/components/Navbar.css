@@ -1,0 +1,107 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111414;
+  padding: 10px 5%;
+  font-weight: bold;
+}
+
+.navbar.light {
+  background-color: #efefef;
+}
+
+.navbar-logo {
+  padding-top: 10px;
+}
+
+.navbar-logo a {
+  color: #efefef;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar.light .navbar-logo a {
+  color: #111414;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.navbar-links a {
+  position: relative;
+  color: #efefef;
+  text-decoration: none;
+}
+
+.navbar-links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: currentColor;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-links a:hover {
+  text-decoration: none; /* Add this to remove the default underline */
+}
+
+.navbar-links a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar.light .navbar-links a {
+  color: #111414;
+}
+
+.navbar.light .navbar-links a:hover {
+  text-decoration: none;
+}
+
+.navbar .navbar-links a:hover {
+  text-decoration: none;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-buttons button {
+  border: none;
+  background: none;
+  color: #efefef;
+  cursor: pointer;
+}
+
+.navbar.light .navbar-buttons button {
+  color: #111414;
+}
+
+.navbar-buttons button:focus {
+  outline: none;
+}
+
+.navbar-buttons button:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: text-decoration 0.2s ease-in-out;
+}
+.navbar-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: text-decoration 0.2s ease-in-out;
+}
+.material-icons {
+  font-size: 1rem;
+  vertical-align: middle;
+}

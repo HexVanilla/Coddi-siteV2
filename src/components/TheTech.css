@@ -1,0 +1,131 @@
+.thetech-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: inherit;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.tech-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.thetech-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+}
+
+.thetech-content h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.thetech-content p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: inherit;
+  color: inherit;
+  border: 2px solid;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.thetech-section.light .video-overlay {
+  background-color: #efefef;
+}
+
+.thetech-section.dark .video-overlay {
+  background-color: #111414;
+}
+
+.dot-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.dot-pattern.light {
+  background-image: radial-gradient(
+    circle,
+    rgba(17, 20, 20, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 10px 10px;
+}
+
+.dot-pattern.dark {
+  background-image: radial-gradient(
+    circle,
+    rgba(239, 239, 239, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 10px 10px;
+}
+
+.light h1,
+.light p,
+.light .cta-button {
+  color: #111414;
+}
+
+.dark h1,
+.dark p,
+.dark .cta-button {
+  color: #efefef;
+}
+
+.light .cta-button {
+  border-color: #111414;
+}
+
+.dark .cta-button {
+  border-color: #efefef;
+}
