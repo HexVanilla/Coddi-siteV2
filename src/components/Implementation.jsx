@@ -16,9 +16,20 @@ const Implementation = ({ theme, language }) => {
     >
       <div className="implementation-content">
         {language == "en" ? (
-          <h1>Implementation Process</h1>
+          <h1>
+            <span className="desktop-only">Implementation</span>{" "}
+            <span className="mobile-only">Implem-</span>
+            <br className="mobile-only" />
+            <span className="mobile-only">entation</span> Process
+          </h1>
         ) : (
-          <h1>Proceso de implementación</h1>
+          <h1>
+            Proceso de{" "}
+            <span className="desktop-only mobile-break">implementación</span>
+            <span className="mobile-only">implem-</span>
+            <br className="mobile-only" />
+            <span className="mobile-only">entación</span>
+          </h1>
         )}
 
         {language == "en" ? (

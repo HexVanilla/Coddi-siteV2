@@ -5,8 +5,8 @@
   display: flex;
   min-height: 100vh;
   background-image: url(../img/background.jpg);
-  background-size: 140vh;
-  background-position: -90%;
+  background-size: cover;
+  background-position: 0;
 }
 .whatwedo-section::before {
   content: "";
@@ -26,6 +26,17 @@
   left: 0px;
   background-color: rgba(255, 255, 255, 0.75);
 }
+
+.whatwedo-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 0%;
+}
+
 .whatwedo-content {
   position: relative;
   flex: 0 0 75%;
@@ -36,6 +47,7 @@
   background-color: #111414;
   color: #efefef;
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  max-width: 100%;
 }
 
 .whatwedo-content.light {
@@ -53,13 +65,45 @@
 .whatwedo-content h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
+}
+
+.whatwedo-content div {
   max-width: 50%;
 }
 
 .whatwedo-content p {
   line-height: 1.5;
   margin-bottom: 2rem;
-  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .whatwedo-content h1 {
+    font-size: 3rem;
+  }
+
+  .whatwedo-content div {
+    max-width: 100%;
+  }
+
+  .whatwedo-content p {
+    font-size: 1.2rem;
+  }
+  .whatwedo-section {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    background-image: none;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .whatwedo-content.light {
+    clip-path: inset(0 0 0 0);
+    padding: 0px 15%;
+  }
+  .whatwedo-content {
+    clip-path: inset(0 0 0 0);
+    padding: 0px 15%;
+  }
 }
 
 .cta-button {
@@ -95,4 +139,11 @@
 
 .fade-out {
   opacity: 0;
+}
+.desktop-only {
+  display: inline;
+}
+
+.mobile-only {
+  display: none;
 }

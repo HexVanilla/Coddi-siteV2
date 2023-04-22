@@ -4,14 +4,14 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #111414;
 }
 .theteam-section.light {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #efefef;
 }
 
@@ -87,4 +87,37 @@
 .dark h4,
 .dark p {
   color: #efefef;
+}
+@media (max-width: 1024px) {
+  .theteam-section {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .left-column,
+  .right-column {
+    flex-basis: 100%;
+  }
+
+  .right-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left-column h1 {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .team-member p {
+    font-size: 1em;
+  }
+  .team-member h3 {
+    font-size: 1em;
+  }
+  .team-member h4 {
+    font-size: 1em;
+  }
+  .theteam-section {
+    font-size: 0.75em;
+  }
 }

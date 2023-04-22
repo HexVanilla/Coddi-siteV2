@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from "../img/logo.png";
 import logoDark from "../img/logoDark.png";
 import { CiLight, CiCircleQuestion, CiDark } from "react-icons/ci";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = ({
   theme,
@@ -19,31 +20,58 @@ const Navbar = ({
     setLanguage(language === "en" ? "es" : "en");
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className={`navbar ${theme}`}>
       <div className="navbar-logo">
         <img src={theme == "light" ? logoDark : logo} alt="" width="150px" />
       </div>
-      <div className="navbar-links">
-        <a onClick={() => scrollToSection("whatwedo")}>
+      <div className={`navbar-links${isMenuOpen ? " open" : ""}`}>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("whatwedo")}
+        >
           {language === "en" ? "What We Do" : "Lo que hacemos"}
         </a>
-        <a onClick={() => scrollToSection("implementation")}>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("implementation")}
+        >
           {language === "en" ? "Implementation" : "Implementación"}
         </a>
-        <a onClick={() => scrollToSection("problem")}>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("problem")}
+        >
           {language === "en" ? "The Problem" : "El problema"}
         </a>
-        <a onClick={() => scrollToSection("thetech")}>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("thetech")}
+        >
           {language === "en" ? "The Tech" : "La tecnología"}
         </a>
-        <a onClick={() => scrollToSection("ourclients")}>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("ourclients")}
+        >
           {language === "en" ? "Our Clients" : "Clientes"}
         </a>
-        <a onClick={() => scrollToSection("theteam")}>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("theteam")}
+        >
           {language === "en" ? "The Team" : "El equipo"}
         </a>
       </div>
+      <AiOutlineMenu
+        className={`hamburger-menu ${theme}`} // Add the className attribute here
+        onClick={toggleMenu}
+      />
       <div className="navbar-buttons">
         <button className="theme-toggle" onClick={toggleTheme}>
           {theme == "light" ? (

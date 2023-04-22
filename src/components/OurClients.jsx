@@ -7,7 +7,7 @@ import logo04 from "../img/LogosClientes-04.png";
 import useIntersectionObserver from "./useIntersectionObserver";
 import { useRef } from "react";
 
-const OurClients = ({ theme }) => {
+const OurClients = ({ theme, language }) => {
   const sectionRef = useRef();
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
   return (
@@ -18,7 +18,7 @@ const OurClients = ({ theme }) => {
       }`}
       ref={sectionRef}
     >
-      <h1>Our Clients</h1>
+      <h1> {language == "en" ? "Our Clients" : "Clientes"}</h1>
       <div className="client-columns">
         <div className="client-box">
           <img src={logo01} alt="" />
