@@ -37,6 +37,9 @@ const Navbar = ({
         <a onClick={() => scrollToSection("thetech")}>
           {language === "en" ? "The Tech" : "La tecnología"}
         </a>
+        <a onClick={() => scrollToSection("ourclients")}>
+          {language === "en" ? "Our Clients" : "Clientes"}
+        </a>
         <a onClick={() => scrollToSection("theteam")}>
           {language === "en" ? "The Team" : "El equipo"}
         </a>

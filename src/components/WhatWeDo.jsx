@@ -53,10 +53,6 @@ const WhatWeDo = ({ theme, language }) => {
             </p>
           </div>
         )}
-
-        <button className="cta-button">
-          {language == "en" ? "Learn More" : "Aprende más"}
-        </button>
       </div>
     </section>
   );

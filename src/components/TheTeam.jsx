@@ -1,7 +1,7 @@
 import React from "react";
 import "./TheTeam.css";
 import carlos from "../img/carlos.png";
-import daniel from "../img/daniel.png";
+import patricio from "../img/patricio.png";
 import jourdan from "../img/jourdan.png";
 import warren from "../img/warren.png";
 import pedro from "../img/pedro.png";
@@ -31,10 +31,10 @@ const TheTeam = ({ theme, language }) => {
       image: jourdan,
     },
     {
-      name: "Daniel Díaz Almeida, PH.D.",
-      title: "Senior Data Science",
-      description: "daniel@coddi.ai",
-      image: daniel,
+      name: "Patricio Ortiz Vargas, MSC.",
+      title: "Data Science",
+      description: "patricio@coddi.ai",
+      image: patricio,
     },
     {
       name: "Carlos Poblete Canales",

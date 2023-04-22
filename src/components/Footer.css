@@ -1,3 +1,5 @@
+/* src/components/Footer.css */
+
 .footer-section {
   padding: 2rem;
   text-align: center;
@@ -41,13 +43,11 @@
   align-items: center;
 }
 
-.footer-columns .left-column,
-.footer-columns .center-column,
-.footer-columns .right-column {
-  flex-basis: 33%;
+.footer-columns .column {
+  flex-basis: 25%;
 }
 
-.footer-columns .right-column img {
+.footer-columns img {
   width: 120px;
 }
 

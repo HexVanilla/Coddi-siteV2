@@ -1,3 +1,5 @@
+// src/components/Footer.js
+
 import React from "react";
 import "./Footer.css";
 import logo from "../img/logo.png";
@@ -5,6 +7,7 @@ import logoDark from "../img/logoDark.png";
 import { FaLinkedin } from "react-icons/fa";
 import useIntersectionObserver from "./useIntersectionObserver";
 import { useRef } from "react";
+import hub from "../img/hub.png";
 
 const Footer = ({ theme, language }) => {
   const sectionRef = useRef();
@@ -18,12 +21,16 @@ const Footer = ({ theme, language }) => {
       ref={sectionRef}
     >
       <h1>{language == "en" ? "Let's Talk" : "Hablemos"}</h1>
+
       <hr className="divider" />
       <div className="footer-columns">
-        <div className="left-column">
+        <div className="column">
           <h2>info@coddi.ai</h2>
         </div>
-        <div className="center-column">
+        <div className="column">
+          <img src={hub} alt="" width="240px" />
+        </div>
+        <div className="column">
           <a
             href="https://www.linkedin.com/company/coddi_pmd"
             target="_blank"
@@ -36,7 +43,7 @@ const Footer = ({ theme, language }) => {
             </div>
           </a>
         </div>
-        <div className="right-column">
+        <div className="column">
           <img src={theme == "light" ? logoDark : logo} alt="Coddi Logo" />
         </div>
       </div>

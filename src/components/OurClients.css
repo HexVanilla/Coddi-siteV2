@@ -1,0 +1,43 @@
+/* src/components/OurClients.css */
+
+.our-clients-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.client-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 5em;
+}
+
+.client-box {
+  width: 20%;
+  padding-top: 20%;
+  background-color: #efefef;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.client-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.light h1 {
+  color: #111414;
+  font-size: 5em;
+}
+
+.dark h1 {
+  color: #efefef;
+  font-size: 5em;
+}

@@ -7,6 +7,7 @@ import TheTech from "./components/TheTech";
 import TheTeam from "./components/TheTeam";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
+import OurClients from "./components/OurClients";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -39,6 +40,7 @@ function App() {
       <Implementation theme={theme} language={language} />
       <TheProblem theme={theme} language={language} />
       <TheTech theme={theme} language={language} />
+      <OurClients theme={theme} language={language} />
       <TheTeam theme={theme} language={language} />
       <Footer theme={theme} language={language} />
       <BackToTopButton theme={theme} />
