@@ -22,7 +22,8 @@ const WhatWeDo = ({ theme, language }) => {
             <span className="desktop-only">¿Qué hacemos?</span>
             <span className="mobile-only">¿Qué</span>
             <br className="mobile-only" />
-            <span className="mobile-only">hace-</span> mos?
+            <span className="mobile-only">hace-</span>{" "}
+            <span className="mobile-only">mos?</span>
           </h1>
         )}
 

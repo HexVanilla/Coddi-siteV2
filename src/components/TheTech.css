@@ -137,10 +137,15 @@
   }
 
   .thetech-content p {
-    width: 100%;
+    width: 90%;
+    text-align: left;
+  }
+  .thetech-content h1 {
+    width: 80%;
+    text-align: left;
   }
   .thetech-content {
-    font-size: 0.75em;
+    font-size: 0.85em;
     padding: 10px;
   }
   .thetech-section {
