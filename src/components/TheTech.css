@@ -129,3 +129,33 @@
 .dark .cta-button {
   border-color: #efefef;
 }
+/* Add this media query */
+@media (max-width: 1024px) {
+  .tech-video,
+  .video-container {
+    display: none;
+  }
+
+  .thetech-content p {
+    width: 90%;
+    text-align: left;
+  }
+  .thetech-content h1 {
+    width: 80%;
+    text-align: left;
+  }
+  .thetech-content {
+    font-size: 0.85em;
+    padding: 10px;
+  }
+  .thetech-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .thetech-content {
+    padding: 10px;
+    font-size: 0.6em;
+  }
+}

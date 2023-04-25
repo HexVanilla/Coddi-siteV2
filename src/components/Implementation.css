@@ -37,7 +37,64 @@
   background-image: radial-gradient(rgba(0, 0, 0, 0.25) 1px, transparent 1px);
 }
 
+.implementation-content {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .implementation-content {
+    font-size: 0.95rem;
+    width: 90%;
+    text-align: left;
+    margin-left: auto; /* Add this line */
+    margin-right: auto; /* Add this line */
+  }
+}
+
 .implementation-content h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
+}
+
+.desktop-only {
+  display: inline;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .implementation-content {
+    font-size: 0.75rem;
+    text-align: left;
+    width: 85%;
+    margin-left: auto; /* Add this line */
+    margin-right: auto; /* Add this line */
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inline;
+  }
+}
+
+@media (max-width: 320px) {
+  .implementation-content {
+    font-size: 0.7em;
+    width: 85%;
+    text-align: left;
+    margin-left: auto; /* Add this line */
+    margin-right: auto; /* Add this line */
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inline;
+  }
 }

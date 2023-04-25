@@ -41,3 +41,19 @@
   color: #efefef;
   font-size: 5em;
 }
+@media (max-width: 768px) {
+  .client-columns {
+    padding: 2em;
+  }
+
+  .client-box {
+    width: 45%;
+    padding-top: 45%;
+  }
+}
+
+@media (max-width: 320px) {
+  .our-clients-section {
+    font-size: 0.75em;
+  }
+}

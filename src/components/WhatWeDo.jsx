@@ -15,7 +15,17 @@ const WhatWeDo = ({ theme, language }) => {
       ref={sectionRef}
     >
       <div className={`whatwedo-content ${theme}`}>
-        {language == "en" ? <h1>What we do?</h1> : <h1>¿Qué hacemos?</h1>}
+        {language == "en" ? (
+          <h1>What we do?</h1>
+        ) : (
+          <h1>
+            <span className="desktop-only">¿Qué hacemos?</span>
+            <span className="mobile-only">¿Qué</span>
+            <br className="mobile-only" />
+            <span className="mobile-only">hace-</span>{" "}
+            <span className="mobile-only">mos?</span>
+          </h1>
+        )}
 
         {language == "en" ? (
           <div>

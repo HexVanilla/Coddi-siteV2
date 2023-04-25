@@ -76,3 +76,24 @@
 .dark .linkedin svg {
   color: #efefef;
 }
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-columns .column {
+    flex-basis: 100%;
+  }
+
+  .linkedin {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-section {
+    font-size: 0.6em;
+  }
+}
