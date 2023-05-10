@@ -1,7 +1,7 @@
 // src/components/Popup.js
 import React, { useState } from "react";
 import "./Popup.css";
-
+import aiGif from "../img/Aigif.gif";
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(true);
 
@@ -17,18 +17,17 @@ const Popup = () => {
             <button className="popup-close-btn" onClick={handleClose}>
               &times;
             </button>
-            <h4>
-              Coddi is developing a new service for knowledge management in the
-              diagnostic of condition monitoring techniques, using Open AI Chat
-              GPT-3. We are committed to providing a high-quality service and we
-              want to ensure that it meets the needs of our customers.
-            </h4>
-            <h4>
-              That's why we are conducting this survey to gather feedback and
-              identify other functions that customers would like to see in our
-              service. Your input is valuable and will help us to continue to
-              improve and innovate.
-            </h4>
+            <div style={{ display: "flex" }}>
+              <img src={aiGif} alt="" width="30%" />
+              <h4>
+                “Coddi is developing a new service for diagnostic condition
+                monitoring, using Open AI Chat GPT-3. We are committed to
+                providing a high-quality and innovative service. That's why we
+                are conducting this survey your input is valuable and will help
+                us to continue to innovate.”
+              </h4>
+            </div>
+
             <button
               className="popup-cta-btn"
               onClick={() =>
