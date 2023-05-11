@@ -39,11 +39,12 @@ const TheTech = ({ theme, language }) => {
                 state-of-the-art ML algorithms.
               </p>
               <p>
-                We embrase an AWS-first approach to enjoy high availability,
-                security, relaibility and scalability for all our products. That
-                way we can constantly monitor our products to check for model
-                and data quality and bias with roll-back capabilities to
-                previous models.
+                Our company's products are powered by cutting-edge AI techniques
+                running on a robust cloud infrastructure. We prioritize high
+                availability, security, reliability, and scalability for all our
+                products. This allows us to continuously monitor our products
+                and ensure model and data quality, as well as bias detection,
+                with the ability to roll back to previous models if necessary.
               </p>
             </div>
           ) : (
@@ -55,12 +56,14 @@ const TheTech = ({ theme, language }) => {
                 de aprendizaje automático.
               </p>
               <p>
-                Adoptamos un enfoque basado en AWS para disfrutar de una alta
+                Los productos de nuestra empresa funcionan con técnicas de
+                inteligencia artificial de vanguardia que se ejecutan en una
+                sólida infraestructura en la nube. Priorizamos una alta
                 disponibilidad, seguridad, confiabilidad y escalabilidad para
-                todos nuestros productos De esa manera podemos monitorear
-                constantemente nuestros productos para verificar si modelo y
-                calidad de datos y sesgo con capacidades de reversión para
-                modelos anteriores.
+                todos nuestros productos. Esto nos permite monitorear
+                continuamente nuestros productos y garantizar la calidad del
+                modelo y los datos, así como la detección de sesgos, con la
+                capacidad de devolverse a modelos anteriores si es necesario.
               </p>
             </div>
           )}

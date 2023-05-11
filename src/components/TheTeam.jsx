@@ -36,12 +36,14 @@ const TheTeam = ({ theme, language }) => {
       description: "patricio@coddi.ai",
       image: patricio,
     },
+    /*
     {
       name: "Carlos Poblete Canales",
       title: "Data Science",
       description: "carlos@coddi.ai",
       image: carlos,
     },
+    */
     // Add more team members here
   ];
 

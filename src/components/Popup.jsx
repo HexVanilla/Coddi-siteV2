@@ -17,8 +17,8 @@ const Popup = () => {
             <button className="popup-close-btn" onClick={handleClose}>
               &times;
             </button>
-            <div style={{ display: "flex" }}>
-              <img src={aiGif} alt="" width="30%" />
+            <div className="popup-content">
+              <img src={aiGif} alt="" width="196px" height="128px" />
               <h4>
                 “Coddi is developing a new service for diagnostic condition
                 monitoring, using Open AI Chat GPT-3. We are committed to
