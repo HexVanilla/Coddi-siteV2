@@ -8,6 +8,7 @@ import TheTeam from "./components/TheTeam";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 import OurClients from "./components/OurClients";
+import Popup from "./components/Popup";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      <Popup />
       <Navbar
         theme={theme}
         setTheme={setTheme}
