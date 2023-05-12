@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import "./Popup.css";
 import aiGif from "../img/Aigif.gif";
+import es from "../img/es.svg";
+import en from "../img/us.svg";
+
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(true);
 
@@ -27,17 +30,49 @@ const Popup = () => {
                 us to continue to innovate.”
               </h4>
             </div>
-
-            <button
-              className="popup-cta-btn"
-              onClick={() =>
-                window.open(
-                  "https://forms.office.com/Pages/ResponsePage.aspx?id=WWZiz1oUp0yCXVzSHqmCJtTg8BHgoRNKg4opqFSG3zJUOVFXM1Q4UE5ERFlBQ05LWk9LREoyTjRRMS4u&embed=true"
-                )
-              }
-            >
-              Take the survey
-            </button>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              {" "}
+              <button
+                className="popup-cta-btn"
+                onClick={() =>
+                  window.open(
+                    "https://forms.office.com/Pages/ResponsePage.aspx?id=WWZiz1oUp0yCXVzSHqmCJtTg8BHgoRNKg4opqFSG3zJUOVFXM1Q4UE5ERFlBQ05LWk9LREoyTjRRMS4u&embed=true"
+                  )
+                }
+              >
+                <p style={{ fontSize: "small" }}>
+                  <span>
+                    <img
+                      src={en}
+                      alt=""
+                      width={16}
+                      style={{ borderRadius: "50%" }}
+                    />
+                  </span>{" "}
+                  Take the Survey
+                </p>
+              </button>
+              <button
+                className="popup-cta-btn"
+                onClick={() =>
+                  window.open(
+                    "https://forms.office.com/Pages/ResponsePage.aspx?id=WWZiz1oUp0yCXVzSHqmCJtTg8BHgoRNKg4opqFSG3zJUMDlZMjVVS0JCVVdSWjhLMzRRM083WFZKRi4u&embed=true"
+                  )
+                }
+              >
+                <p style={{ fontSize: "small" }}>
+                  <span>
+                    <img
+                      src={es}
+                      alt=""
+                      width={16}
+                      style={{ borderRadius: "50%" }}
+                    />
+                  </span>{" "}
+                  Responder la Encuesta
+                </p>
+              </button>
+            </div>
           </div>
         </div>
       )}
