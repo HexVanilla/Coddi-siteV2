@@ -1,0 +1,74 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #364f6b;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  padding: 50px;
+  border-radius: 15px;
+  width: 50%;
+  max-width: 250px;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 64px;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  background-color: #ccc;
+  color: lightgray;
+  margin: 20px 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container div {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  cursor: pointer;
+}
+
+.login-form input[type="submit"] {
+  padding: 10px;
+  color: white;
+  background-color: #364f6b;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #2a3b50;
+}

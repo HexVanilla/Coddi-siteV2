@@ -7,8 +7,8 @@ import logoDark from "../img/logoDark.png";
 import { FaLinkedin } from "react-icons/fa";
 import useIntersectionObserver from "./useIntersectionObserver";
 import { useRef } from "react";
-import hub from "../img/hub.png";
-
+import hub from "../img/microsoftLogo.svg";
+import sqm from "../img/sqmLogo.svg";
 const Footer = ({ theme, language }) => {
   const sectionRef = useRef();
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
@@ -29,6 +29,9 @@ const Footer = ({ theme, language }) => {
         </div>
         <div className="column">
           <img src={hub} alt="" width="240px" />
+        </div>
+        <div className="column">
+          <img src={sqm} alt="" width="240px" />
         </div>
         <div className="column">
           <a

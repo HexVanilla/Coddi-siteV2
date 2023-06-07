@@ -4,6 +4,7 @@ import logo01 from "../img/LogosClientes-01.png";
 import logo02 from "../img/LogosClientes-02.png";
 import logo03 from "../img/LogosClientes-03.png";
 import logo04 from "../img/LogosClientes-04.png";
+import logo05 from "../img/LogosClientes-05.png";
 import useIntersectionObserver from "./useIntersectionObserver";
 import { useRef } from "react";
 
@@ -31,6 +32,9 @@ const OurClients = ({ theme, language }) => {
         </div>
         <div className="client-box">
           <img src={logo04} alt="" />
+        </div>
+        <div className="client-box">
+          <img src={logo05} alt="" />
         </div>
       </div>
     </section>

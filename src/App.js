@@ -9,7 +9,9 @@ import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 import OurClients from "./components/OurClients";
 import Popup from "./components/Popup";
-
+import Login from "./components/Login";
+import LoadingPage from "./components/LoadingPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   const [theme, setTheme] = useState("light");
   const [language, setLanguage] = useState("en");
@@ -29,24 +31,35 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Popup />
-      <Navbar
-        theme={theme}
-        setTheme={setTheme}
-        language={language}
-        setLanguage={setLanguage}
-        scrollToSection={scrollToSection}
-      />
-      <WhatWeDo theme={theme} language={language} />
-      <Implementation theme={theme} language={language} />
-      <TheProblem theme={theme} language={language} />
-      <TheTech theme={theme} language={language} />
-      <OurClients theme={theme} language={language} />
-      <TheTeam theme={theme} language={language} />
-      <Footer theme={theme} language={language} />
-      <BackToTopButton theme={theme} />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/loading" element={<LoadingPage />} />
+        <Route
+          path="/"
+          element={
+            <div className="App">
+              <Popup />
+              <Navbar
+                theme={theme}
+                setTheme={setTheme}
+                language={language}
+                setLanguage={setLanguage}
+                scrollToSection={scrollToSection}
+              />
+              <WhatWeDo theme={theme} language={language} />
+              <Implementation theme={theme} language={language} />
+              <TheProblem theme={theme} language={language} />
+              <TheTech theme={theme} language={language} />
+              <OurClients theme={theme} language={language} />
+              <TheTeam theme={theme} language={language} />
+              <Footer theme={theme} language={language} />
+              <BackToTopButton theme={theme} />
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
