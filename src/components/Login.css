@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #364f6b;
+  background-image: url(../img/ReactBG-01.png);
 }
 
 .login-card {
@@ -12,11 +12,21 @@
   justify-content: center;
   align-items: center;
   background-color: #efefef;
-  padding: 50px;
+  padding: 3em; /* Use em instead of px for a more responsive layout */
   border-radius: 15px;
-  width: 50%;
+  width: 80%; /* Set width to 80% initially */
   max-width: 250px;
-  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* This media query will apply if the width of the viewport
+   is greater than or equal to 600px (common breakpoint for tablets) */
+@media (min-width: 600px) {
+  .login-card {
+    width: 50%; /* Adjust width to 50% for larger screens */
+    padding: 50px;
+  }
 }
 
 .logo-container {

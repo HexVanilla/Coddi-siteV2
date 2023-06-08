@@ -7,8 +7,10 @@ import logoDark from "../img/logoDark.png";
 import { FaLinkedin } from "react-icons/fa";
 import useIntersectionObserver from "./useIntersectionObserver";
 import { useRef } from "react";
-import hub from "../img/microsoftLogo.svg";
+import hub from "../img/microsoft_logo-01.svg";
+import hubWhite from "../img/microsoft_logo-02.svg";
 import sqm from "../img/sqmLogo.svg";
+import linkedin from "../img/linkedin.png";
 const Footer = ({ theme, language }) => {
   const sectionRef = useRef();
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
@@ -28,10 +30,10 @@ const Footer = ({ theme, language }) => {
           <h2>info@coddi.ai</h2>
         </div>
         <div className="column">
-          <img src={hub} alt="" width="240px" />
+          <img src={theme == "light" ? hub : hubWhite} />
         </div>
         <div className="column">
-          <img src={sqm} alt="" width="240px" />
+          <img src={sqm} alt="" style={{ height: "64px" }} />
         </div>
         <div className="column">
           <a
@@ -40,9 +42,7 @@ const Footer = ({ theme, language }) => {
             rel="noopener noreferrer"
           >
             <div className="linkedin">
-              <FaLinkedin className={theme} size={32} />{" "}
-              {/* Set the icon size */}
-              <p>coddi_pmd</p>
+              <img src={linkedin} alt="" />
             </div>
           </a>
         </div>

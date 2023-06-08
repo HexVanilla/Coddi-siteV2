@@ -5,8 +5,8 @@
   display: flex;
   min-height: 100vh;
   background-image: url(../img/background.jpg);
-  background-size: cover;
-  background-position: 0;
+  background-size: 75%;
+  background-position: 100%;
 }
 .whatwedo-section::before {
   content: "";
@@ -15,7 +15,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .whatwedo-section.light::before {
   content: "";
@@ -24,7 +24,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .whatwedo-bg {
@@ -39,7 +39,7 @@
 
 .whatwedo-content {
   position: relative;
-  flex: 0 0 75%;
+  flex: 0 0 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +52,7 @@
 
 .whatwedo-content.light {
   position: relative;
-  flex: 0 0 75%;
+  flex: 0 0 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
