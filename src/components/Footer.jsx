@@ -10,7 +10,7 @@ import { useRef } from "react";
 import hub from "../img/microsoft_logo-01.svg";
 import hubWhite from "../img/microsoft_logo-02.svg";
 import sqm from "../img/sqmLogo.svg";
-import linkedin from "../img/linkedin.png";
+import linkedin from "../img/linkedin-01.svg";
 const Footer = ({ theme, language }) => {
   const sectionRef = useRef();
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
