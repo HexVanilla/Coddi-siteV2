@@ -8,6 +8,7 @@ import animationData from "../img/bgAnim.json";
 import animationDataT from "../img/bgAnimT.json";
 import animationDataM from "../img/bgAnimM.json";
 import animationDataSM from "../img/bgAnimSM.json";
+import animationDataPCS from "../img/bgAnimPCS.json";
 function Login() {
   const [passwordShown, setPasswordShown] = useState(false);
   const [msg, setMsg] = useState("");
@@ -55,11 +56,13 @@ function Login() {
       <div className="login-animation">
         <Lottie
           animationData={
-            screenWidth > 1440
+            screenWidth >= 1440
               ? animationData
-              : screenWidth > 768
+              : screenWidth >= 1024
+              ? animationDataPCS
+              : screenWidth >= 768
               ? animationDataT
-              : screenWidth > 320
+              : screenWidth >= 320
               ? animationDataM
               : animationDataSM
           }
