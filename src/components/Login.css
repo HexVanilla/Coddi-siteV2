@@ -1,9 +1,16 @@
 .login-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(../img/ReactBG-01.png);
+}
+.login-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
 }
 
 .login-card {
@@ -11,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #efefef;
+  background-color: #364f6b;
   padding: 3em; /* Use em instead of px for a more responsive layout */
   border-radius: 15px;
   width: 80%; /* Set width to 80% initially */
@@ -42,7 +49,7 @@
   height: 1px;
   background-color: #ccc;
   color: lightgray;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .login-form {
@@ -73,12 +80,19 @@
 .login-form input[type="submit"] {
   padding: 10px;
   color: white;
-  background-color: #364f6b;
+  background-color: #2a3b50;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .login-form input[type="submit"]:hover {
-  background-color: #2a3b50;
+  background-color: #fbd758;
+  color: #2a3b50;
+}
+.hello-msg {
+  color: white;
+  margin: 20px;
+  padding-bottom: 20px;
+  font-weight: lighter;
 }
