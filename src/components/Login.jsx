@@ -9,6 +9,7 @@ import animationDataT from "../img/bgAnimT.json";
 import animationDataM from "../img/bgAnimM.json";
 import animationDataSM from "../img/bgAnimSM.json";
 import animationDataPCS from "../img/bgAnimPCS.json";
+import animationDataPCM from "../img/bgAnimPCS.json";
 function Login() {
   const [passwordShown, setPasswordShown] = useState(false);
   const [msg, setMsg] = useState("");
@@ -52,21 +53,22 @@ function Login() {
   }
 
   return (
-    <>
+    <div style={{ backgroundColor: "#47688D" }}>
       <div className="login-animation">
         <Lottie
           animationData={
-            screenWidth >= 1440
+            screenWidth > 1440
               ? animationData
-              : screenWidth >= 1024
+              : screenWidth > 1024
+              ? animationData
+              : screenWidth > 768
               ? animationDataPCS
-              : screenWidth >= 768
+              : screenWidth > 425
               ? animationDataT
-              : screenWidth >= 320
+              : screenWidth > 320
               ? animationDataM
               : animationDataSM
           }
-          id="lottie-animation"
           loop={false}
         />
       </div>
@@ -108,7 +110,7 @@ function Login() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
