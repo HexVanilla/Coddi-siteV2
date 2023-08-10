@@ -1,9 +1,16 @@
-import React from "react";
+import useIntersectionObserver from "./useIntersectionObserver";
+import { useRef } from "react";
 import "./News.css";
 import newsBanner from "../img/linkedin_news01.png";
 const News = ({ theme, language }) => {
+  const sectionRef = useRef();
+  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
   return (
-    <div id="news" className="news-header">
+    <section
+      id="news"
+      className={`news-header ${isVisible ? "fade-in" : "fade-out"}`}
+      ref={sectionRef}
+    >
       <h1
         style={{ fontSize: "5em", color: theme == "dark" ? "white" : "black" }}
       >
@@ -25,11 +32,11 @@ const News = ({ theme, language }) => {
               artificial generativa para el monitoreo de la condición de equipos
               de minería...
             </p>
-            <a href="">Continuar leyendo en Linkedin</a>
+            <a href="">Continuar leyendo en LinkedIn</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

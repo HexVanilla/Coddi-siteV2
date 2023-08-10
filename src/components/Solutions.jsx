@@ -1,12 +1,19 @@
-import React from "react";
+import useIntersectionObserver from "./useIntersectionObserver";
+import { useRef } from "react";
 import "./Solutions.css";
 import Implementation from "./Implementation";
 import TheProblem from "./TheProblem";
 import TheTech from "./TheTech";
 
 const Solutions = ({ theme, language }) => {
+  const sectionRef = useRef();
+  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
   return (
-    <div id="solutions">
+    <div
+      id="solutions"
+      className={`${isVisible ? "fade-in" : "fade-out"}`}
+      ref={sectionRef}
+    >
       <div className={`solutions-section ${theme}`}>
         {language == "en" ? (
           <>
