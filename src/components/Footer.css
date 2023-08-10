@@ -97,3 +97,9 @@
     font-size: 0.6em;
   }
 }
+.api-button.light {
+  padding-right: 0.25em;
+}
+.api-button {
+  padding-right: 0.25em;
+}

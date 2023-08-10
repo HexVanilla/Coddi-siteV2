@@ -17,12 +17,12 @@ const TheProblem = ({ theme, language }) => {
       ref={sectionRef}
     >
       <div className="problem-content2">
-        <img src={theme == "light" ? gifLight : gifDark} alt="" width="50%" />
+        <img src={theme == "light" ? gifLight : gifDark} alt="" />
         <div>
           {language == "en" ? (
             <h1>What is the problem we are solving?</h1>
           ) : (
-            <h1>¿Cuál es el problema que estamos resolviendo?</h1>
+            <h2>¿Cuál es el problema que estamos resolviendo?</h2>
           )}
 
           {language == "en" ? (

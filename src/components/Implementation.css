@@ -55,7 +55,7 @@
 }
 
 .implementation-content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -81,11 +81,15 @@
   .mobile-only {
     display: inline;
   }
+
+  .implementation-content h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 320px) {
   .implementation-content {
-    font-size: 0.7em;
+    font-size: 0.5em;
     width: 85%;
     text-align: left;
     margin-left: auto; /* Add this line */
@@ -96,5 +100,8 @@
   }
   .mobile-only {
     display: inline;
+  }
+  .implementation-content h1 {
+    font-size: 3rem;
   }
 }
