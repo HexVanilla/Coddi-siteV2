@@ -60,7 +60,7 @@ const Optimizing = ({ theme, language }) => {
               inteligencia artificial con el monitoreo de condición de equipos,
               llevando la toma de decisiones a un nivel completamente nuevo.
             </p>
-            <h2>¿Qué Ofrecemos?</h2>
+            <h1>¿Qué Ofrecemos?</h1>
             <p>
               Nuestro servicio de Monitoreo de Condición se basa en tecnología
               de punta, integrando la potente inteligencia artificial generativa

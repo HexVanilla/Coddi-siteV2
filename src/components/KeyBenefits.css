@@ -79,8 +79,8 @@
 
 @media (max-width: 320px) {
   .key-benefits h1 {
-    font-size: 2em; /* Reduced the font size for smaller screens */
-    padding: 1em 0; /* Adjusted the padding */
+    font-size: 2.5em; /* Reduced the font size for smaller screens */
+    text-align: left;
   }
   .key-row p {
     text-align: center;
@@ -88,5 +88,8 @@
 
   .key-row h2 {
     font-size: 2em; /* Adjust the font size */
+  }
+  .key-row {
+    padding: 1em;
   }
 }

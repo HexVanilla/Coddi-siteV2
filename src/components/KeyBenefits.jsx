@@ -46,6 +46,7 @@ const KeyBenefits = ({ theme, language }) => {
             ? "Maintenance Optimization"
             : "Optimización del Mantenimiento"}
         </h2>
+
         <div className="vl"></div>
         <p>
           {language == "en"
