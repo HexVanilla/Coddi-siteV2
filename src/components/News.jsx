@@ -32,7 +32,9 @@ const News = ({ theme, language }) => {
               artificial generativa para el monitoreo de la condición de equipos
               de minería...
             </p>
-            <a href="">Continuar leyendo en LinkedIn</a>
+            <a href="https://www.linkedin.com/pulse/revolucionando-el-monitoreo-de-equipos-miner%25C3%25ADa-con-inteligencia">
+              Continuar leyendo en LinkedIn
+            </a>
           </div>
         </div>
       </div>
