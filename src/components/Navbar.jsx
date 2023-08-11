@@ -39,9 +39,17 @@ const Navbar = ({
         </a>
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
-          onClick={() => scrollToSection("solutions")}
+          onClick={() => scrollToSection("condition")}
         >
-          {language === "en" ? "Solutions" : "Soluciones"}
+          {language === "en" ? "Condition Monitoring" : "Monitoreo Condición"}
+        </a>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("predictive")}
+        >
+          {language === "en"
+            ? " Predictive Maintenance"
+            : "Manteneimiento Predictivo"}
         </a>
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
