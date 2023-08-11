@@ -11,7 +11,7 @@ const HowItWorks = ({ theme, language }) => {
         <div>
           {language == "en" ? <h1>How It Works?</h1> : <h2>¿Cómo Funciona?</h2>}
 
-          {language == "en" ? (
+          {language == "es" ? (
             <div>
               <p>
                 Nuestro sistema se conecta con los resultados de monitoreo y
