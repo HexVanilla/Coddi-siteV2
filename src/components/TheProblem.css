@@ -20,99 +20,41 @@
   align-items: center;
 }
 
-/* Add this media query */
+.problem-content2 img {
+  width: 50%;
+}
+.problem-content2 h1 {
+  font-size: 5em;
+}
+.problem-content2 h2 {
+  font-size: 5em;
+}
 @media (max-width: 1024px) {
   .problem-content2 {
     flex-direction: column-reverse;
+    margin: 1em;
+    font-size: 0.5rem;
     text-align: left;
   }
-
   .problem-content2 img {
     width: 100%;
   }
-}
-@media (max-width: 768px) {
-  .problem-section {
-    padding: 50px 2%;
+  .problem-content2 h1 {
+    font-size: 8em;
   }
+}
 
+@media (max-width: 768px) {
   .problem-content2 {
     flex-direction: column-reverse;
-    font-size: 0.95em;
+    margin: 1em;
+    font-size: 0.5rem;
+    text-align: left;
   }
-
   .problem-content2 img {
     width: 100%;
   }
-  .problem-content2 p {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 90%;
-  }
   .problem-content2 h1 {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 90%;
+    font-size: 6em;
   }
-}
-@media (max-width: 425px) {
-  .problem-content2 {
-    font-size: 0.75em;
-    width: 90%;
-    overflow: hidden;
-    text-align: left;
-    margin-left: auto; /* Add this line */
-    margin-right: auto; /* Add this line */
-  }
-  .problem-content2 img {
-    width: 110%;
-  }
-  .problem-content2 p {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 85%;
-  }
-  .problem-content2 h1 {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 85%;
-  }
-}
-@media (max-width: 320px) {
-  .problem-content2 {
-    font-size: 0.55em;
-    width: 90%;
-    overflow: hidden;
-    text-align: left;
-    margin-left: auto; /* Add this line */
-    margin-right: auto; /* Add this line */
-  }
-  .problem-content2 img {
-    width: 110%;
-  }
-  .problem-content2 p {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 80%;
-  }
-  .problem-content2 h1 {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 80%;
-  }
-}
-.problem-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 30px 30px;
-  z-index: 1;
-}
-
-.problem-content2 h1 {
-  font-size: 5rem;
-  margin-bottom: 1rem;
 }

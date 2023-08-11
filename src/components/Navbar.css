@@ -8,6 +8,23 @@
   padding: 10px 5%;
   font-weight: bold;
 }
+.app-button {
+  color: white;
+  background-color: coral;
+  border: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 1em;
+  text-decoration: none;
+  font-size: 0.75em;
+  text-align: center;
+}
+.app-button:hover {
+  color: white;
+  background-color: lightcoral;
+}
 
 .navbar.light {
   background-color: #efefef;

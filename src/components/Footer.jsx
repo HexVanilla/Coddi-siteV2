@@ -11,6 +11,8 @@ import hub from "../img/microsoft_logo-01.svg";
 import hubWhite from "../img/microsoft_logo-02.svg";
 import sqm from "../img/sqmLogo.svg";
 import linkedin from "../img/linkedin-01.svg";
+import { IoDocumentTextOutline } from "react-icons/io5";
+
 const Footer = ({ theme, language }) => {
   const sectionRef = useRef();
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
@@ -44,6 +46,14 @@ const Footer = ({ theme, language }) => {
             <div className="linkedin">
               <img src={linkedin} alt="" />
             </div>
+          </a>
+        </div>
+        <div className="column">
+          <a href="http://api.coddi.ai/docs/#introduccion">
+            <p>
+              <IoDocumentTextOutline className={`api-button ${theme}`} />
+              {language == "en" ? "API Documentation" : "Documentación API"}
+            </p>
           </a>
         </div>
         <div className="column">

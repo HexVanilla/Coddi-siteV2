@@ -39,21 +39,17 @@ const Navbar = ({
         </a>
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
-          onClick={() => scrollToSection("implementation")}
+          onClick={() => scrollToSection("condition")}
         >
-          {language === "en" ? "Implementation" : "Implementación"}
+          {language === "en" ? "Condition Monitoring" : "Monitoreo Condición"}
         </a>
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
-          onClick={() => scrollToSection("problem")}
+          onClick={() => scrollToSection("predictive")}
         >
-          {language === "en" ? "The Problem" : "El problema"}
-        </a>
-        <a
-          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
-          onClick={() => scrollToSection("thetech")}
-        >
-          {language === "en" ? "The Tech" : "La tecnología"}
+          {language === "en"
+            ? " Predictive Maintenance"
+            : "Mantenimiento Predictivo"}
         </a>
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
@@ -67,12 +63,22 @@ const Navbar = ({
         >
           {language === "en" ? "The Team" : "El equipo"}
         </a>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("news")}
+        >
+          {language === "en" ? "News" : "Noticias"}
+        </a>
       </div>
       <AiOutlineMenu
         className={`hamburger-menu ${theme}`} // Add the className attribute here
         onClick={toggleMenu}
       />
+
       <div className="navbar-buttons">
+        <a href="http://app.coddi.ai" style={{ textDecoration: "none" }}>
+          <div className="app-button">AI App</div>
+        </a>
         <button className="theme-toggle" onClick={toggleTheme}>
           {theme == "light" ? (
             <span className="material-icons">

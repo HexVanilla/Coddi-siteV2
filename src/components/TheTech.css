@@ -51,6 +51,10 @@
   font-size: 5rem;
   margin-bottom: 1rem;
 }
+.thetech-content h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
 
 .thetech-content p {
   width: 50%;
@@ -153,9 +157,27 @@
   }
 }
 
+@media (max-width: 768px) {
+  .thetech-content {
+    padding: 10px;
+    font-size: 0.6em;
+  }
+  .thetech-content h1 {
+    font-size: 5em;
+  }
+}
+
 @media (max-width: 320px) {
   .thetech-content {
     padding: 10px;
     font-size: 0.6em;
+  }
+  .thetech-content h1 {
+    font-size: 6em;
+  }
+  .thetech-content h2 {
+    font-size: 3rem;
+    text-align: left;
+    padding-left: 0.5em;
   }
 }

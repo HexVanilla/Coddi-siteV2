@@ -27,9 +27,13 @@ const TheTech = ({ theme, language }) => {
       </div>
       <div className={`dot-pattern ${theme}`}></div>
       <div className="thetech-content">
-        <h1 className={theme}>
-          {language == "en" ? "The Tech Behind" : "La tecnología detrás"}
-        </h1>
+        <>
+          {language == "en" ? (
+            <h1 className={theme}> The Tech Behind</h1>
+          ) : (
+            <h2 className={theme}>La tecnología detrás</h2>
+          )}
+        </>
         <p className={theme}>
           {language == "en" ? (
             <div>

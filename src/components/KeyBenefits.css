@@ -1,0 +1,96 @@
+.vl {
+  border-left: 2px solid dimgray;
+  height: 100%;
+}
+
+.key-row {
+  display: flex;
+  flex-direction: row;
+  height: 10em;
+  padding: 2em;
+  align-items: center;
+}
+
+.key-row h2 {
+  padding: 1em;
+  text-align: right;
+  flex: 1;
+}
+.key-row p {
+  padding: 1em;
+  text-align: left;
+  flex: 2;
+  color: dimgray;
+}
+
+.key-benefits.light {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #efefef;
+}
+.key-benefits {
+  background-color: #111414;
+}
+.key-benefits h1 {
+  font-size: 5em;
+  padding-right: 2em;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .key-benefits h1 {
+    font-size: 3em;
+  }
+  .key-row p {
+    font-size: 1em;
+  }
+  .key-row h2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .key-benefits h1 {
+    font-size: 2.5em;
+    text-align: center;
+    padding-left: 1em;
+  }
+
+  .key-row {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .key-row h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em; /* Add a little margin to separate title from text */
+  }
+
+  .key-row p {
+    text-align: left;
+  }
+
+  .vl {
+    display: none; /* Hide the vertical line on smaller screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .key-benefits h1 {
+    font-size: 2.5em; /* Reduced the font size for smaller screens */
+    text-align: left;
+  }
+  .key-row p {
+    text-align: center;
+  }
+
+  .key-row h2 {
+    font-size: 2em; /* Adjust the font size */
+  }
+  .key-row {
+    padding: 1em;
+  }
+}

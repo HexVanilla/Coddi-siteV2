@@ -74,6 +74,16 @@
 .whatwedo-content p {
   line-height: 1.5;
 }
+@media (max-width: 1024px) {
+  .whatwedo-section {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: 190%;
+    background-position: 100%;
+  }
+}
 
 @media (max-width: 768px) {
   .whatwedo-content h1 {
