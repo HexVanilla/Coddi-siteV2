@@ -65,6 +65,7 @@
 
   .key-row h2 {
     text-align: center;
+    font-size: 2em;
     margin-bottom: 0.5em; /* Add a little margin to separate title from text */
   }
 
