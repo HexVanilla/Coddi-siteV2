@@ -49,7 +49,7 @@ const Navbar = ({
         >
           {language === "en"
             ? " Predictive Maintenance"
-            : "Manteneimiento Predictivo"}
+            : "Mantenimiento Predictivo"}
         </a>
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
