@@ -86,6 +86,42 @@
     font-size: 4rem;
   }
 }
+@media (max-width: 360px) {
+  .implementation-content {
+    font-size: 0.5em;
+    width: 85%;
+    text-align: left;
+    margin-left: auto; /* Add this line */
+    margin-right: auto; /* Add this line */
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inline;
+  }
+  .implementation-content h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 425px) {
+  .implementation-content {
+    font-size: 0.5em;
+    width: 85%;
+    text-align: left;
+    margin-left: auto; /* Add this line */
+    margin-right: auto; /* Add this line */
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inline;
+  }
+  .implementation-content h1 {
+    font-size: 3rem;
+  }
+}
 
 @media (max-width: 320px) {
   .implementation-content {

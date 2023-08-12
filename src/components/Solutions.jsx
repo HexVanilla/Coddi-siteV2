@@ -10,7 +10,7 @@ import HowItWorks from "./HowItWorks";
 
 const Solutions = ({ theme, language }) => {
   const sectionRef = useRef();
-  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.05 });
+  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.03 });
   return (
     <div className={`${isVisible ? "fade-in" : "fade-out"}`} ref={sectionRef}>
       <div className={`solutions-section ${theme}`} id="predictive">
