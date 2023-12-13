@@ -21,6 +21,7 @@ const News = ({ theme, language }) => {
       <div className="news-section">
         <div className="news-box">
           <img src={newsBanner} alt="" className="news-image" />
+
           <div className="info-news-box">
             <h1>
               Revolucionando el Monitoreo de Equipos de Minería con Inteligencia

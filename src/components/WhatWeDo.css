@@ -5,11 +5,11 @@
   display: flex;
   min-height: 100vh;
   background-image: url(../img/background.jpg);
-  background-size: 75%;
+  background-size: 85%;
   background-position: 100%;
 }
 .whatwedo-section::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   right: 0px;
@@ -18,7 +18,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .whatwedo-section.light::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0px;
   right: 0px;
