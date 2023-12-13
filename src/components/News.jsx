@@ -1,20 +1,22 @@
-import useIntersectionObserver from "./useIntersectionObserver";
-import { useRef } from "react";
-import "./News.css";
-import newsBanner from "../img/linkedin_news01.png";
+import useIntersectionObserver from './useIntersectionObserver'
+import { useRef } from 'react'
+import './News.css'
+import newsBanner from '../img/linkedin_news01.png'
+import newsBannerHackaton from '../img/hackaton.jpg'
+
 const News = ({ theme, language }) => {
-  const sectionRef = useRef();
-  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
+  const sectionRef = useRef()
+  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 })
   return (
     <section
       id="news"
-      className={`news-header ${isVisible ? "fade-in" : "fade-out"}`}
+      className={`news-header ${isVisible ? 'fade-in' : 'fade-out'}`}
       ref={sectionRef}
     >
       <h1
-        style={{ fontSize: "5em", color: theme == "dark" ? "white" : "black" }}
+        style={{ fontSize: '5em', color: theme == 'dark' ? 'white' : 'black' }}
       >
-        {language == "en" ? "News" : "Noticias"}
+        {language == 'en' ? 'News' : 'Noticias'}
       </h1>
       <div className="news-section">
         <div className="news-box">
@@ -37,9 +39,29 @@ const News = ({ theme, language }) => {
             </a>
           </div>
         </div>
+        <div className="news-box">
+          <img src={newsBannerHackaton} alt="" className="news-image" />
+          <div className="info-news-box">
+            <h1>
+              Desafiando límites y liderando la innovación: Coodi triunfa en la
+              Hackathon de Minera Centinela
+            </h1>
+            <small>13 de diciembre de 2023</small>
+            <p>
+              ¡Emocionados de compartir la noticia! En los últimos días, el
+              equipo de Coodi se destacó en la primera hackathon organizada por
+              Minera Centinela, donde enfrentamos el desafío de "identificar y
+              alertar zonas de velocidad cero" para mejorar el rendimiento de la
+              flota de transporte....
+            </p>
+            <a href="https://www.linkedin.com/pulse/desafiando-l%25C3%25ADmites-y-liderando-la-innovaci%25C3%25B3n-coodi-triunfa-en-uthle">
+              Continuar leyendo en LinkedIn
+            </a>
+          </div>
+        </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default News;
+export default News
