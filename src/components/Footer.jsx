@@ -11,6 +11,7 @@ import hub from "../img/microsoft_logo-01.svg";
 import hubWhite from "../img/microsoft_logo-02.svg";
 import sqm from "../img/sqmLogo.svg";
 import linkedin from "../img/linkedin-01.svg";
+import startupChile from "../img/Logo Start-Up Chile by Corfo-01.png";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 const Footer = ({ theme, language }) => {
@@ -36,6 +37,9 @@ const Footer = ({ theme, language }) => {
         </div>
         <div className="column">
           <img src={sqm} alt="" style={{ height: "64px" }} />
+        </div>
+        <div className="column">
+          <img src={startupChile} alt="" style={{ height: "64px" }} />
         </div>
         <div className="column">
           <a
