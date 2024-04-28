@@ -9,6 +9,7 @@ import KeyBenefits from "./KeyBenefits";
 import HowItWorks from "./HowItWorks";
 import KeyBenefitsPredictive from "./KeyBenefits_predictive";
 import KeyMetrics from "./KeyMetrics";
+import bg from "../img/background.jpg";
 
 const Solutions = ({ theme, language }) => {
   const sectionRef = useRef();
@@ -18,13 +19,26 @@ const Solutions = ({ theme, language }) => {
       <div className={`solutions-section ${theme}`} id="predictive">
         {language == "en" ? (
           <>
-            <h1 style={{ marginRight: 10 }}>Predictive</h1>
-            <h1>Maintenance</h1>
+            <h1 style={{ marginRight: 10 }}>Predictive Maintenance</h1>
+
+            <p>
+              Coddi empowers industrial companies with cutting-edge AI-driven
+              predictive maintenance and condition monitoring solutions,
+              minimizing downtime, reducing costs, and maximizing equipment
+              reliability and operational efficiency.
+            </p>
           </>
         ) : (
           <>
-            <h1 style={{ marginRight: 10 }}>Mantenimiento</h1>
-            <h1>Predictivo</h1>
+            <h1 style={{ marginRight: 10 }}>Mantenimiento Predictivo</h1>
+
+            <p>
+              Coddi empodera a las empresas con soluciones de mantenimiento
+              predictivo y monitoreo de condiciones impulsadas por IA de última
+              generación, minimizando tiempos detenidos, reduciendo costos y
+              maximizando la confiabilidad de los activos y la eficiencia
+              operativa.
+            </p>
           </>
         )}{" "}
       </div>

@@ -31,18 +31,12 @@ const Navbar = ({
         <img src={theme == "light" ? logoDark : logo} alt="" width="150px" />
       </div>
       <div className={`navbar-links${isMenuOpen ? " open" : ""}`}>
-        <a
+        {/*<a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
           onClick={() => scrollToSection("whatwedo")}
         >
           {language === "en" ? "What We Do" : "Lo que hacemos"}
-        </a>
-        <a
-          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
-          onClick={() => scrollToSection("condition")}
-        >
-          {language === "en" ? "Condition Monitoring" : "Monitoreo Condición"}
-        </a>
+  </a>*/}
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
           onClick={() => scrollToSection("predictive")}
@@ -51,6 +45,13 @@ const Navbar = ({
             ? " Predictive Maintenance"
             : "Mantenimiento Predictivo"}
         </a>
+        <a
+          style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
+          onClick={() => scrollToSection("condition")}
+        >
+          {language === "en" ? "Condition Monitoring" : "Monitoreo Condición"}
+        </a>
+
         <a
           style={isMenuOpen ? { fontSize: "1.5rem", lineHeight: "2" } : {}}
           onClick={() => scrollToSection("ourclients")}

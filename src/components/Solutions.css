@@ -7,6 +7,11 @@
   justify-content: center;
   color: white;
   overflow: hidden;
+  flex-direction: column;
+}
+.solutions-section p {
+  margin-left: 10em;
+  margin-right: 10em;
 }
 .solutions-section .light {
   color: #111414;
@@ -17,12 +22,20 @@
     margin: 2em;
     font-size: 0.75rem;
   }
+  .solutions-section p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 @media (max-width: 768px) {
   .solutions-section {
     flex-direction: column;
     margin: 2em;
     font-size: 0.7rem;
+  }
+  .solutions-section p {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 @media (max-width: 425px) {
@@ -31,6 +44,10 @@
     margin: 2em;
     font-size: 0.6rem;
   }
+  .solutions-section p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 @media (max-width: 320px) {
@@ -38,5 +55,9 @@
     flex-direction: column;
     margin: 2em;
     font-size: 0.4rem;
+  }
+  .solutions-section p {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
