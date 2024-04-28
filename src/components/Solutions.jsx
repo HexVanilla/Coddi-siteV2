@@ -7,6 +7,8 @@ import TheTech from "./TheTech";
 import Optimizing from "./Optimizing";
 import KeyBenefits from "./KeyBenefits";
 import HowItWorks from "./HowItWorks";
+import KeyBenefitsPredictive from "./KeyBenefits_predictive";
+import KeyMetrics from "./KeyMetrics";
 
 const Solutions = ({ theme, language }) => {
   const sectionRef = useRef();
@@ -29,6 +31,7 @@ const Solutions = ({ theme, language }) => {
 
       <Implementation theme={theme} language={language} />
       <TheProblem theme={theme} language={language} />
+      <KeyBenefitsPredictive theme={theme} language={language} />
       <TheTech theme={theme} language={language} />
       <div className={`solutions-section ${theme}`} id="condition">
         {language == "en" ? (
@@ -43,6 +46,7 @@ const Solutions = ({ theme, language }) => {
       </div>
       <Optimizing theme={theme} language={language} />
       <KeyBenefits theme={theme} language={language} />
+      <KeyMetrics theme={theme} language={language} />
       <HowItWorks theme={theme} language={language} />
     </div>
   );
