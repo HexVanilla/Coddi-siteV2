@@ -17,18 +17,17 @@ const Implementation = ({ theme, language }) => {
       <div className="implementation-content">
         {language == "en" ? (
           <h1>
-            <span className="desktop-only">Implementation</span>{" "}
-            <span className="mobile-only">Implem-</span>
+            <span className="desktop-only">Predictive Maintenance</span>{" "}
+            <span className="mobile-only">Predictive</span>
             <br className="mobile-only" />
-            <span className="mobile-only">entation</span> Process
+            <span className="mobile-only">Maintenance</span>
           </h1>
         ) : (
           <h1>
-            Proceso de{" "}
-            <span className="desktop-only mobile-break">implementación</span>
-            <span className="mobile-only">implem-</span>
+            <span className="desktop-only">Mantenimiento Predictivo</span>{" "}
+            <span className="mobile-only">Predictive</span>
             <br className="mobile-only" />
-            <span className="mobile-only">entación</span>
+            <span className="mobile-only">Maintenance</span>
           </h1>
         )}
 

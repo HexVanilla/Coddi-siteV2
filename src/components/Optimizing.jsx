@@ -17,18 +17,13 @@ const Optimizing = ({ theme, language }) => {
       <div className="implementation-content">
         {language == "en" ? (
           <>
-            <h1>
-              Optimizing the Future of Mining with Accurate and Efficient
-              Diagnostics!
-            </h1>
+            <h1>Condition Monitoring</h1>
           </>
         ) : (
-          <h1>
-            ¡Optimizando el Futuro de la Minería con Diagnósticos Precisos y
-            Eficientes!
-          </h1>
-        )}
-
+          <>
+            <h1>Monitoreo por Condición</h1>
+          </>
+        )}{" "}
         {language == "en" ? (
           <div>
             <p>
@@ -39,14 +34,6 @@ const Optimizing = ({ theme, language }) => {
               implementation combines the power of artificial intelligence with
               equipment condition monitoring, taking decision-making to an
               entirely new level.
-            </p>
-            <h1>What We Offer</h1>
-            <p>
-              Our Condition Monitoring service is built on cutting-edge
-              technology, integrating powerful generative artificial
-              intelligence with the Microsoft Azure cloud platform. This allows
-              us to generate precise and detailed diagnostics from monitoring
-              results, providing deep insights into equipment status.
             </p>
           </div>
         ) : (
@@ -60,18 +47,34 @@ const Optimizing = ({ theme, language }) => {
               inteligencia artificial con el monitoreo de condición de equipos,
               llevando la toma de decisiones a un nivel completamente nuevo.
             </p>
-            <h1>¿Qué Ofrecemos?</h1>
-            <p>
-              Nuestro servicio de Monitoreo de Condición se basa en tecnología
-              de punta, integrando la potente inteligencia artificial generativa
-              con la plataforma en la nube Microsoft Azure. Esto nos permite
-              generar diagnósticos precisos y detallados a partir de los
-              resultados de monitoreo, brindando una comprensión profunda del
-              estado de los equipos.
-            </p>
           </div>
         )}
       </div>
+      {language == "en" ? (
+        <div className="what-we-offer">
+          <h1>What We Offer</h1>
+          <p>
+            Our Condition Monitoring service is built on cutting-edge
+            technology, integrating powerful generative artificial intelligence
+            with the Microsoft Azure cloud platform. This allows us to generate
+            precise and detailed diagnostics from monitoring results, providing
+            deep insights into equipment status.
+          </p>
+        </div>
+      ) : (
+        <div className="what-we-offer">
+          {" "}
+          <h1>¿Qué Ofrecemos?</h1>
+          <p>
+            Nuestro servicio de Monitoreo de Condición se basa en tecnología de
+            punta, integrando la potente inteligencia artificial generativa con
+            la plataforma en la nube Microsoft Azure. Esto nos permite generar
+            diagnósticos precisos y detallados a partir de los resultados de
+            monitoreo, brindando una comprensión profunda del estado de los
+            equipos.
+          </p>
+        </div>
+      )}
     </section>
   );
 };
