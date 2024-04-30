@@ -10,8 +10,9 @@
   flex-direction: column;
 }
 .solutions-section p {
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-top: 5em;
+  margin-left: 20em;
+  margin-right: 20em;
 }
 .solutions-section .light {
   color: #111414;

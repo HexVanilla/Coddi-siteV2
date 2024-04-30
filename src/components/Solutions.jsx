@@ -19,8 +19,6 @@ const Solutions = ({ theme, language }) => {
       <div className={`solutions-section ${theme}`} id="predictive">
         {language == "en" ? (
           <>
-            <h1 style={{ marginRight: 10 }}>Predictive Maintenance</h1>
-
             <p>
               Coddi empowers industrial companies with cutting-edge AI-driven
               predictive maintenance and condition monitoring solutions,
@@ -30,8 +28,6 @@ const Solutions = ({ theme, language }) => {
           </>
         ) : (
           <>
-            <h1 style={{ marginRight: 10 }}>Mantenimiento Predictivo</h1>
-
             <p>
               Coddi empodera a las empresas con soluciones de mantenimiento
               predictivo y monitoreo de condiciones impulsadas por IA de última
@@ -47,17 +43,7 @@ const Solutions = ({ theme, language }) => {
       <TheProblem theme={theme} language={language} />
       <KeyBenefitsPredictive theme={theme} language={language} />
       <TheTech theme={theme} language={language} />
-      <div className={`solutions-section ${theme}`} id="condition">
-        {language == "en" ? (
-          <>
-            <h1>Condition Monitoring</h1>
-          </>
-        ) : (
-          <>
-            <h1>Monitoreo por Condición</h1>
-          </>
-        )}{" "}
-      </div>
+      <div className={`solutions-section ${theme}`} id="condition"></div>
       <Optimizing theme={theme} language={language} />
       <KeyBenefits theme={theme} language={language} />
       <KeyMetrics theme={theme} language={language} />

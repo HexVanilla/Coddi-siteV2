@@ -19,7 +19,7 @@
 }
 
 .implementation-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -138,5 +138,27 @@
   }
   .implementation-content h1 {
     font-size: 2.5rem;
+  }
+}
+
+.what-we-offer {
+  position: relative;
+  left: 50%;
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 5%;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .what-we-offer {
+    position: relative;
+    left: 0%;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 5%;
+    width: 100%;
+  }
+  .what-we-offer h1 {
+    font-size: 3rem;
   }
 }
