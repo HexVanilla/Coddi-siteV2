@@ -1,24 +1,45 @@
-import useIntersectionObserver from './useIntersectionObserver'
-import { useRef } from 'react'
-import './News.css'
-import newsBanner from '../img/linkedin_news01.png'
-import newsBannerHackaton from '../img/hackaton.jpg'
+import useIntersectionObserver from "./useIntersectionObserver";
+import { useRef } from "react";
+import "./News.css";
+import newsBanner from "../img/linkedin_news01.png";
+import newsBannerHackaton from "../img/hackaton.jpg";
+import newsBannerExportacion from "../img/exportacion2024.jpg";
 
 const News = ({ theme, language }) => {
-  const sectionRef = useRef()
-  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 })
+  const sectionRef = useRef();
+  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
   return (
     <section
       id="news"
-      className={`news-header ${isVisible ? 'fade-in' : 'fade-out'}`}
+      className={`news-header ${isVisible ? "fade-in" : "fade-out"}`}
       ref={sectionRef}
     >
       <h1
-        style={{ fontSize: '5em', color: theme == 'dark' ? 'white' : 'black' }}
+        style={{ fontSize: "5em", color: theme == "dark" ? "white" : "black" }}
       >
-        {language == 'en' ? 'News' : 'Noticias'}
+        {language == "en" ? "News" : "Noticias"}
       </h1>
       <div className="news-section">
+        <div className="news-box">
+          <img src={newsBannerExportacion} alt="" className="news-image" />
+
+          <div className="info-news-box">
+            <h1>
+              ¡Coddi es parte del Portafolio de Proveedores de la Minería de
+              Exportación 2024! / Coddi joins the 2024 Export Mining Suppliers
+              Portfolio
+            </h1>
+            <small>2 de mayo de 2024</small>
+            <p>
+              ¡Es un placer anunciar que Coddi forma parte del Portafolio de
+              Proveedores de la Minería de Exportación 2024, ya disponible en
+              línea en el siguiente enlace: Portafolio 2024!...
+            </p>
+            <a href="https://www.linkedin.com/pulse/coddi-es-parte-del-portafolio-de-proveedores-la-miner%25C3%25ADa-exportaci%25C3%25B3n-yoejf">
+              Continuar leyendo en LinkedIn
+            </a>
+          </div>
+        </div>
         <div className="news-box">
           <img src={newsBannerHackaton} alt="" className="news-image" />
           <div className="info-news-box">
@@ -62,7 +83,7 @@ const News = ({ theme, language }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default News
+export default News;
