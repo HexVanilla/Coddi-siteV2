@@ -4,6 +4,7 @@ import "./News.css";
 import newsBanner from "../img/linkedin_news01.png";
 import newsBannerHackaton from "../img/hackaton.jpg";
 import newsBannerExportacion from "../img/exportacion2024.jpg";
+import newsBannerChilemass from "../img/chilemass.jpg";
 
 const News = ({ theme, language }) => {
   const sectionRef = useRef();
@@ -20,6 +21,26 @@ const News = ({ theme, language }) => {
         {language == "en" ? "News" : "Noticias"}
       </h1>
       <div className="news-section">
+        <div className="news-box">
+          <img src={newsBannerChilemass} alt="" className="news-image" />
+
+          <div className="info-news-box">
+            <h1>
+              CODDI Joins Elite Innovation Circle with ChileMass Selection
+            </h1>
+            <small>15 de mayo de 2024</small>
+            <p>
+              We are thrilled to announce that CODDI has been selected to
+              participate in the renowned program, organized by ChileMass and
+              supported by Corfo. This opportunity marks a significant milestone
+              in our journey, reinforcing our commitment to innovation and
+              international collaboration...
+            </p>
+            <a href="https://www.linkedin.com/pulse/coddi-joins-elite-innovation-circle-chilemass-selection-coddi-pmd-tsi2e/?published=t">
+              Continue reading at LinkedIn
+            </a>
+          </div>
+        </div>
         <div className="news-box">
           <img src={newsBannerExportacion} alt="" className="news-image" />
 
