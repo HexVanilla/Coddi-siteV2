@@ -42,7 +42,6 @@ const Solutions = ({ theme, language }) => {
           <>
             <div className="call-to-action-section">
               <div className="call-to-action-section-col-left">
-                {" "}
                 <p>
                   Coddi empowers industrial companies with cutting-edge
                   AI-driven predictive maintenance and condition monitoring
@@ -104,15 +103,70 @@ const Solutions = ({ theme, language }) => {
           </>
         ) : (
           <>
-            <p>
-              Coddi empodera a las empresas con soluciones de mantenimiento
-              predictivo y monitoreo de condiciones impulsadas por IA de última
-              generación, minimizando tiempos detenidos, reduciendo costos y
-              maximizando la confiabilidad de los activos y la eficiencia
-              operativa.
-            </p>
+            <div className="call-to-action-section">
+              <div className="call-to-action-section-col-left">
+                {" "}
+                <p>
+                  Coddi empodera a las empresas con soluciones de mantenimiento
+                  predictivo y monitoreo de condiciones impulsadas por IA de
+                  última generación, minimizando tiempos detenidos, reduciendo
+                  costos y maximizando la confiabilidad de los activos y la
+                  eficiencia operativa.
+                </p>
+              </div>
+
+              {showForm == false ? (
+                <div className="call-to-action-section-col-right">
+                  <h1>Coddi Soluciones AI</h1>
+                  <button onClick={() => setShowForm(true)}>
+                    Pedir a Demo
+                  </button>
+                </div>
+              ) : (
+                <div className="call-to-action-section-col-right">
+                  <form className="formContainer" onSubmit={handleOnSubmit}>
+                    <h2>Pedir un Demo</h2>
+                    <div className="formElement">
+                      <label for="from_name">Nombre</label>
+                      <input
+                        type="text"
+                        id="from_name"
+                        name="from_name"
+                        placeholder="Tu nombre.."
+                        required
+                      />
+                    </div>
+
+                    <div className="formElement">
+                      <label>E-mail</label>
+                      <input
+                        type="email"
+                        id="from_email"
+                        name="from_email"
+                        placeholder="Tu email.."
+                        required
+                      />
+                    </div>
+
+                    <div className="formElement">
+                      <label for="message">Mensaje</label>
+                      <textarea
+                        name="message"
+                        rows="8"
+                        cols="30"
+                        placeholder="Tu mensaje.."
+                        required
+                      />
+                    </div>
+                    <button type="submit" className="formButton">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
+              )}
+            </div>
           </>
-        )}{" "}
+        )}
       </div>
 
       <Implementation theme={theme} language={language} />
