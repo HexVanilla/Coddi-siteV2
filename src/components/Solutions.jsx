@@ -1,5 +1,5 @@
 import useIntersectionObserver from "./useIntersectionObserver";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./Solutions.css";
 import Implementation from "./Implementation";
 import TheProblem from "./TheProblem";
@@ -10,21 +10,97 @@ import HowItWorks from "./HowItWorks";
 import KeyBenefitsPredictive from "./KeyBenefits_predictive";
 import KeyMetrics from "./KeyMetrics";
 import bg from "../img/background.jpg";
+import emailjs from "emailjs-com";
 
 const Solutions = ({ theme, language }) => {
   const sectionRef = useRef();
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.03 });
+  const [showForm, setShowForm] = useState(false);
+  const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(serviceId, templateId, e.target, publicKey).then(
+      (result) => {
+        console.log(result.text);
+        alert("Message Sent Successfully");
+      },
+      (error) => {
+        console.log(error.text);
+        alert("Something went wrong!");
+      }
+    );
+    e.target.reset();
+  };
+
   return (
     <div className={`${isVisible ? "fade-in" : "fade-out"}`} ref={sectionRef}>
       <div className={`solutions-section ${theme}`} id="predictive">
         {language == "en" ? (
           <>
-            <p>
-              Coddi empowers industrial companies with cutting-edge AI-driven
-              predictive maintenance and condition monitoring solutions,
-              minimizing downtime, reducing costs, and maximizing equipment
-              reliability and operational efficiency.
-            </p>
+            <div className="call-to-action-section">
+              <div className="call-to-action-section-col-left">
+                {" "}
+                <p>
+                  Coddi empowers industrial companies with cutting-edge
+                  AI-driven predictive maintenance and condition monitoring
+                  solutions, minimizing downtime, reducing costs, and maximizing
+                  equipment reliability and operational efficiency.
+                </p>
+              </div>
+
+              {showForm == false ? (
+                <div className="call-to-action-section-col-right">
+                  <h1>Coddi AI Solutions</h1>
+                  <button onClick={() => setShowForm(true)}>
+                    Request a Demo
+                  </button>
+                </div>
+              ) : (
+                <div className="call-to-action-section-col-right">
+                  <form className="formContainer" onSubmit={handleOnSubmit}>
+                    <h2>Request a Demo</h2>
+                    <div className="formElement">
+                      <label for="from_name">Name</label>
+                      <input
+                        type="text"
+                        id="from_name"
+                        name="from_name"
+                        placeholder="Your name.."
+                        required
+                      />
+                    </div>
+
+                    <div className="formElement">
+                      <label>E-mail</label>
+                      <input
+                        type="email"
+                        id="from_email"
+                        name="from_email"
+                        placeholder="Your email.."
+                        required
+                      />
+                    </div>
+
+                    <div className="formElement">
+                      <label for="message">Message</label>
+                      <textarea
+                        name="message"
+                        rows="8"
+                        cols="30"
+                        placeholder="Your message.."
+                        required
+                      />
+                    </div>
+                    <button type="submit" className="formButton">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              )}
+            </div>
           </>
         ) : (
           <>

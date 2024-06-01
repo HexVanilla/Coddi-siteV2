@@ -19,6 +19,90 @@
 .solutions-section .light {
   color: #111414;
 }
+.call-to-action-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.call-to-action-section-col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  padding-right: 5em;
+  padding-left: 5em;
+}
+.call-to-action-section-col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  padding-right: 10em;
+}
+.call-to-action-section-col-right button {
+  color: white;
+  background-color: coral;
+  border: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 1em;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center;
+}
+.call-to-action-section p {
+  margin-top: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-bottom: 0em;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 2em;
+  border-radius: 1em;
+  margin-right: 5em;
+}
+.formElement {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+.formElement label {
+  color: black;
+}
+.formElement input {
+  margin-top: 0.5em;
+  border: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  border-radius: 1em;
+  text-decoration: none;
+  font-size: 0.75em;
+  text-align: left;
+}
+.formElement textarea {
+  margin-top: 0.5em;
+  border: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  border-radius: 1em;
+  text-decoration: none;
+  font-size: 0.75em;
+  text-align: left;
+}
 @media (max-width: 1024px) {
   .solutions-section {
     flex-direction: column;

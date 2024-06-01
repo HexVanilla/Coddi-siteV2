@@ -29,7 +29,6 @@ const WhatWeDo = ({ theme, language }) => {
 
         {language == "en" ? (
           <div>
-            {" "}
             <p>
               Coddi empowers industrial companies with cutting-edge AI-driven
               predictive maintenance and condition monitoring solutions,
