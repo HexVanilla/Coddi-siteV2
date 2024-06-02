@@ -21,6 +21,7 @@
 }
 .call-to-action-section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -123,6 +124,13 @@
   .solutions-section p {
     margin-left: 1em;
     margin-right: 1em;
+  }
+  .call-to-action-section-col-right {
+    text-align: center;
+    padding-right: 0em;
+  }
+  .call-to-action-section {
+    flex-direction: column;
   }
 }
 @media (max-width: 425px) {
