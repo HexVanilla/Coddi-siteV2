@@ -1,26 +1,48 @@
-import useIntersectionObserver from "./useIntersectionObserver";
-import { useRef } from "react";
-import "./News.css";
-import newsBanner from "../img/linkedin_news01.png";
-import newsBannerHackaton from "../img/hackaton.jpg";
-import newsBannerExportacion from "../img/exportacion2024.jpg";
-import newsBannerChilemass from "../img/chilemass.jpg";
+import useIntersectionObserver from './useIntersectionObserver'
+import { useRef } from 'react'
+import './News.css'
+import newsBanner from '../img/linkedin_news01.png'
+import newsBannerHackaton from '../img/hackaton.jpg'
+import newsBannerExportacion from '../img/exportacion2024.jpg'
+import newsBannerChilemass from '../img/chilemass.jpg'
+import newsBannerCooper from '../img/mantoscooper.png'
 
 const News = ({ theme, language }) => {
-  const sectionRef = useRef();
-  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
+  const sectionRef = useRef()
+  const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 })
   return (
     <section
       id="news"
-      className={`news-header ${isVisible ? "fade-in" : "fade-out"}`}
+      className={`news-header ${isVisible ? 'fade-in' : 'fade-out'}`}
       ref={sectionRef}
     >
       <h1
-        style={{ fontSize: "5em", color: theme == "dark" ? "white" : "black" }}
+        style={{ fontSize: '5em', color: theme == 'dark' ? 'white' : 'black' }}
       >
-        {language == "en" ? "News" : "Noticias"}
+        {language == 'en' ? 'News' : 'Noticias'}
       </h1>
       <div className="news-section">
+        <div className="news-box">
+          <img src={newsBannerCooper} alt="" className="news-image" />
+
+          <div className="info-news-box">
+            <h1>
+              Coddi Adjudica Contrato de Monitoreo de Condiciones con Capstone
+              Copper Manto Verde
+            </h1>
+            <small>23 de Junio de 2024</small>
+            <p>
+              Nos complace anunciar que Coddi ha sido adjudicada con el contrato
+              de Capstone Copper Chile Manto Verde para los próximos 2 años.
+              Este contrato nos permitirá implementar nuestra avanzada
+              aplicación de monitoreo de condiciones con inteligencia artificial
+              generativa....
+            </p>
+            <a href="https://www.linkedin.com/pulse/coddi-adjudica-contrato-de-monitoreo-condiciones-con-capstone-emoue/?trackingId=DumNmtjfTWmreDAH3utfrQ%3D%3D">
+              Continuar leyendo en LinkedIn
+            </a>
+          </div>
+        </div>
         <div className="news-box">
           <img src={newsBannerChilemass} alt="" className="news-image" />
 
@@ -37,7 +59,7 @@ const News = ({ theme, language }) => {
               international collaboration...
             </p>
             <a href="https://www.linkedin.com/pulse/coddi-joins-elite-innovation-circle-chilemass-selection-coddi-pmd-tsi2e/?published=t">
-              Continue reading at LinkedIn
+              Continuar leyendo en LinkedIn
             </a>
           </div>
         </div>
@@ -104,7 +126,7 @@ const News = ({ theme, language }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default News;
+export default News

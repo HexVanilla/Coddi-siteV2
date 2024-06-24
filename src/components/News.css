@@ -1,11 +1,8 @@
 .news-section {
-  padding: 2rem 0;
+  padding: 2rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .news-header {
@@ -17,18 +14,12 @@
 }
 
 .news-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 75%;
   background-color: #efefef;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: left;
   padding: 1em;
-  margin-bottom: 1em;
+  margin: 1em;
 
   h1 {
     font-size: 1.5em;
@@ -47,10 +38,4 @@
   max-width: 752px;
   width: 100%;
   height: auto;
-}
-
-@media (min-width: 1024px) {
-  .news-box {
-    width: 50%;
-  }
 }
