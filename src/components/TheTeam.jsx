@@ -1,6 +1,6 @@
 import React from "react";
 import "./TheTeam.css";
-import carlos from "../img/carlos.png";
+import martin from "../img/martin.png";
 import patricio from "../img/patricio.png";
 import jourdan from "../img/jourdan.png";
 import warren from "../img/warren.png";
@@ -14,6 +14,12 @@ const TheTeam = ({ theme, language }) => {
   const sectionRef = useRef();
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.1 });
   const teamMembers = [
+    {
+      name: "Martin Lara Sepúlveda",
+      title: "Back-End Developer",
+      description: "martin@coddi.ai",
+      image: martin,
+    },
     {
       name: "Patricio Ortiz Vargas, MSC.",
       title: "Data Science",
