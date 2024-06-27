@@ -6,6 +6,7 @@ import logo03 from "../img/LogosClientes-03.png";
 import logo04 from "../img/LogosClientes-04.png";
 import logo05 from "../img/LogosClientes-05.png";
 import logo06 from "../img/Esmax-logo-esmax-lab-color-horizontal.png";
+import logo07 from "../img/mantos.png";
 import useIntersectionObserver from "./useIntersectionObserver";
 import { useRef } from "react";
 
@@ -39,6 +40,9 @@ const OurClients = ({ theme, language }) => {
         </div>
         <div className="client-box">
           <img src={logo06} alt="" />
+        </div>
+        <div className="client-box">
+          <img src={logo07} alt="" />
         </div>
       </div>
     </section>
