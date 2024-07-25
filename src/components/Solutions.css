@@ -132,6 +132,14 @@
   .call-to-action-section {
     flex-direction: column;
   }
+  .call-to-action-section-col-left {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .call-to-action-section-col-right button {
+    font-size: 2em;
+    text-align: center;
+  }
 }
 @media (max-width: 425px) {
   .solutions-section {
